@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Fishermen_Project">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fishermen project</title>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="/styles.css">
+
+    <!-- MARKED JS -->
+    <script src="/angular.js"></script>
+    <script src="/marked.js"></script>
+    <script src="/angular-marked.js"></script>
+    <script src="/app.js"></script>
+    <!-- //MARKED JS -->
+</head>
+
+<body>
+    <div id="imgLogo">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="{{content.fields.header.fields.headerLogo.fields.file.url}}" alt="Tarpoon logo" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>header}}
+
+    <div id="body">
+        <div class="container-fluid">
+            {{{body}}}
+        </div>        
+    </div>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            {{>footer}}
+        </div>        
+    </footer>
+
+
+
+    <script>
+        window.onscroll = function () { stickyFunction() };
+
+        var navBar = document.getElementById("navBar");
+        var sticky = navBar.offsetTop;
+
+        function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                navBar.classList.add("sticky");
+            }
+            else {
+                navBar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

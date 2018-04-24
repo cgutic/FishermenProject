@@ -1,0 +1,113 @@
+<div class="row">
+    <section id="section1" class="section" style="background-image: url('{{content.fields.sectionBackground.fields.file.url}}'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <marked class="description">{{content.fields.section1.fields.description}}</marked>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <img src="{{content.fields.section1.fields.image1.fields.file.url}}" style="width: 100%; height: auto;" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="row">
+    <section id="section2" class="section" style="background-image: url('{{content.fields.sectionBackground.fields.file.url}}'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <marked class="description">{{content.fields.section2.fields.description}}</marked>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="row">
+    <section id="section3" class="section" style="background-image: url('{{content.fields.sectionBackground.fields.file.url}}'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <marked class="description">{{content.fields.section3.fields.description}}</marked>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{content.fields.section3.fields.image1.fields.file.url}}" style="width: 100%; height: auto;" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <marked class="description">{{content.fields.section3.fields.description2}}</marked>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="row">
+    <section id="section4" class="section" style="background-image: url('{{content.fields.sectionBackground.fields.file.url}}'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <marked class="description">{{content.fields.section4.fields.description}}</marked>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{content.fields.section4.fields.image1.fields.file.url}}" style="width: 100%; height: auto;" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="row">
+    <section id="section5" class="section" style="background-image: url('{{content.fields.sectionBackground.fields.file.url}}'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <marked class="description">{{content.fields.section5.fields.description}}</marked>
+                </div>                
+            </div>
+            <div class="row">
+                {{#each content.fields.section5.fields.resources}}
+                <div class="col-md-6">
+                    <div class="row justify-content-center">
+                        <marked class="description">{{this.fields.imageTitle}}</marked>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img src="{{this.fields.image.fields.file.url}}" style="width: 200px; height: 280px;" />
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="row">
+    <section id="section6" class="section" style="background-image: url('{{content.fields.sectionBackground.fields.file.url}}'); background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <marked class="description">{{content.fields.section6.fields.description}}</marked>
+                </div>
+                <div class="col-md-7 offset-md-2">
+                    <div class="row">
+                        {{#each content.fields.section6.fields.contacts}}
+                        <div class="col-md-6">
+                            <div class="row justify-content-center">
+                                <img src="{{this.fields.image.fields.file.url}}" style="width: 200px; height: 200px;" />
+                            </div>
+                            <div class="row justify-content-center">
+                                <marked class="description">{{this.fields.imageTitle}}</marked>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,91 @@
+.markedNewLine {
+    white-space: pre-wrap;
+}
+
+#imgLogo {
+    background-color: #CFD8DC;
+}
+
+#navBar {
+    background-color: #B0BEC5;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bg-red {
+    background-color: #ef5350;
+    -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s;
+}
+.bg-red:hover {
+    background-color: #e57373;
+}
+
+.bg-pink {
+    background-color: #EC407A;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.bg-pink:hover {
+    background-color: #F06292;
+}
+
+.bg-purple {
+    background-color: #AB47BC;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.bg-purple:hover {
+    background-color: #BA68C8;
+}
+
+.bg-light-purple {
+    background-color: #7E57C2;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.bg-light-purple:hover {
+    background-color: #9575CD;
+}
+
+.bg-blue {
+    background-color: #5C6BC0;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.bg-blue:hover {
+    background-color: #7986CB;
+}
+
+.bg-light-blue {
+    background-color: #42A5F5;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+.bg-light-blue:hover {
+    background-color: #64B5F6;
+}
+
+.sticky + #body {
+    padding-top: 40px;
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.description strong {
+    color: #26A69A;
+}
+
+#footer {
+    background-color: #26A69A;
+    padding-top: 10px;
+}
