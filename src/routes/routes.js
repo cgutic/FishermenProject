@@ -8,6 +8,15 @@ router.get('/', (req, res) => {
     loadStartContent(res, 'index');
 });
 
+router.get('/photography', (req, res) => {
+    loadStartContent(res, 'photography');
+    // res.render('photography');
+});
+
+router.get('/error', (req, res) => {
+    loadStartContent(res, 'error');
+});
+
 // Loads content from Contentful and renders the start page
 //  page: String with the name of the page to load
 function loadStartContent(res, page) {
@@ -19,12 +28,11 @@ function loadStartContent(res, page) {
         });
 
     }).catch((e) => {
-
+        
         res.status(500, {
-        error: e,
-
+            error: e,
+        });
     });
-  });
 }
 
 module.exports = router;
