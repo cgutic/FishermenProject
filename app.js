@@ -23,7 +23,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.listen(app.get('port'));
 
-app.get('*r', (req, res) => {
+app.get('*', (req, res) => {
     res.redirect('error');
 });
 
